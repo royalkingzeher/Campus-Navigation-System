@@ -22,6 +22,21 @@ C: Candidate vertices (shortest path not yet known)
 One vertex is moved from C to L in each iteration
 
 The steps to be followed for completing the proposed project are as follows:
-    1 Identification of key locations in campus infrastructure- Key Structural points in the campus are to be identified, which work as the node points for the Dijkstra’s Algorithm
-    2 Distance Estimation -Estimated distance is calculated which works as the weight between two adjustment nodes, hence a weighted directed graph is generated.
-    3 Proposing the shortest Path to the User- Using the Dijkstra’s Algorithm the program will suggest the shortest optimal path.
+1. Identification of key locations in campus infrastructure- Key Structural points in the campus are to be identified, which work as the node points for the Dijkstra’s Algorithm.
+2. Distance Estimation -Estimated distance is calculated which works as the weight between two adjustment nodes, hence a weighted directed graph is generated.
+3. Proposing the shortest Path to the User- Using the Dijkstra’s Algorithm the program will suggest the shortest optimal path.
+
+## Solutions ##
+
+The developed Campus Navigation System successfully identifies the most efficient route between any two selected locations within the campus using Dijkstra’s Algorithm. The system models the campus as a weighted directed graph, where each building or landmark acts as a node, and the paths connecting them represent edges with assigned distances or weights.
+
+During implementation, the following findings and outcomes were achieved:
+1. Accurate Path Calculation: The Dijkstra’s algorithm efficiently computed the shortest path between source and destination nodes, ensuring that the selected route minimized total travel distance and time.
+2. Optimal Data Representation: Representing the campus map as a graph with nodes and weighted edges allowed the system to handle complex route calculations dynamically and accurately.
+3. Scalability and Adaptability: The algorithm’s performance remained consistent even when additional nodes (buildings or intersections) were introduced, proving its suitability for expanding campuses.
+4. User-Friendly Output: The system provided clear and concise results, displaying the sequence of nodes to be followed from the starting point to the destination, ensuring easy understanding for users.
+5. Reliability in Navigation: Unlike manual estimation or non-campus-specific navigation tools, the implemented system generated reliable and precise paths tailored specifically for campus environments.
+6. Efficiency and Low Complexity: The average computation time remained low for all test cases, validating the efficiency of Dijkstra’s algorithm for real-time pathfinding applications.
+
+## Conclusion ##
+The findings confirm that Dijkstra’s Algorithm is an effective and efficient approach for solving campus-level navigation problems. The system offers an accurate, scalable, and easily implementable solution to guide students and visitors within large university campuses. The same framework can be extended for indoor navigation, smart campus applications, or real-time GPS integration in the future to enhance usability and automation.
